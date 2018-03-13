@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		694A622D2057ACCC006FAA30 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A622C2057ACCC006FAA30 /* AppDelegate.swift */; };
+		694A62322057ACCC006FAA30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694A62302057ACCC006FAA30 /* Main.storyboard */; };
+		694A62352057ACCC006FAA30 /* Omise_Challenge.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 694A62332057ACCC006FAA30 /* Omise_Challenge.xcdatamodeld */; };
+		694A62372057ACCC006FAA30 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694A62362057ACCC006FAA30 /* Assets.xcassets */; };
+		694A623A2057ACCD006FAA30 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694A62382057ACCD006FAA30 /* LaunchScreen.storyboard */; };
+		694A62452057ACCD006FAA30 /* Omise_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A62442057ACCD006FAA30 /* Omise_ChallengeTests.swift */; };
+		694A62502057ACCD006FAA30 /* Omise_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A624F2057ACCD006FAA30 /* Omise_ChallengeUITests.swift */; };
+		694A62632057AE2E006FAA30 /* CharityListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A62622057AE2E006FAA30 /* CharityListController.swift */; };
+		694A62652057AFFD006FAA30 /* CharityCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A62642057AFFD006FAA30 /* CharityCellView.swift */; };
+		694A62672057B0C9006FAA30 /* ApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694A62662057B0C9006FAA30 /* ApiDataSource.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		694A62412057ACCD006FAA30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 694A62212057ACCC006FAA30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 694A62282057ACCC006FAA30;
+			remoteInfo = "Omise-Challenge";
+		};
+		694A624C2057ACCD006FAA30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 694A62212057ACCC006FAA30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 694A62282057ACCC006FAA30;
+			remoteInfo = "Omise-Challenge";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		694A62292057ACCC006FAA30 /* Omise-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Omise-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		694A622C2057ACCC006FAA30 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		694A62312057ACCC006FAA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		694A62342057ACCC006FAA30 /* Omise_Challenge.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Omise_Challenge.xcdatamodel; sourceTree = "<group>"; };
+		694A62362057ACCC006FAA30 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		694A62392057ACCD006FAA30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		694A623B2057ACCD006FAA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		694A62402057ACCD006FAA30 /* Omise-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Omise-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		694A62442057ACCD006FAA30 /* Omise_ChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Omise_ChallengeTests.swift; sourceTree = "<group>"; };
+		694A62462057ACCD006FAA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		694A624B2057ACCD006FAA30 /* Omise-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Omise-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		694A624F2057ACCD006FAA30 /* Omise_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Omise_ChallengeUITests.swift; sourceTree = "<group>"; };
+		694A62512057ACCD006FAA30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		694A62622057AE2E006FAA30 /* CharityListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityListController.swift; sourceTree = "<group>"; };
+		694A62642057AFFD006FAA30 /* CharityCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharityCellView.swift; sourceTree = "<group>"; };
+		694A62662057B0C9006FAA30 /* ApiDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDataSource.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		694A62262057ACCC006FAA30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694A623D2057ACCD006FAA30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694A62482057ACCD006FAA30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		694A62202057ACCC006FAA30 = {
+			isa = PBXGroup;
+			children = (
+				694A622B2057ACCC006FAA30 /* Omise-Challenge */,
+				694A62432057ACCD006FAA30 /* Omise-ChallengeTests */,
+				694A624E2057ACCD006FAA30 /* Omise-ChallengeUITests */,
+				694A622A2057ACCC006FAA30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		694A622A2057ACCC006FAA30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				694A62292057ACCC006FAA30 /* Omise-Challenge.app */,
+				694A62402057ACCD006FAA30 /* Omise-ChallengeTests.xctest */,
+				694A624B2057ACCD006FAA30 /* Omise-ChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		694A622B2057ACCC006FAA30 /* Omise-Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				694A625E2057ADBF006FAA30 /* Modal */,
+				694A625F2057ADCD006FAA30 /* View */,
+				694A62602057ADD9006FAA30 /* Controller */,
+				694A62612057ADE1006FAA30 /* Api Manager */,
+				694A622C2057ACCC006FAA30 /* AppDelegate.swift */,
+				694A62302057ACCC006FAA30 /* Main.storyboard */,
+				694A62362057ACCC006FAA30 /* Assets.xcassets */,
+				694A62382057ACCD006FAA30 /* LaunchScreen.storyboard */,
+				694A623B2057ACCD006FAA30 /* Info.plist */,
+				694A62332057ACCC006FAA30 /* Omise_Challenge.xcdatamodeld */,
+			);
+			path = "Omise-Challenge";
+			sourceTree = "<group>";
+		};
+		694A62432057ACCD006FAA30 /* Omise-ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				694A62442057ACCD006FAA30 /* Omise_ChallengeTests.swift */,
+				694A62462057ACCD006FAA30 /* Info.plist */,
+			);
+			path = "Omise-ChallengeTests";
+			sourceTree = "<group>";
+		};
+		694A624E2057ACCD006FAA30 /* Omise-ChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				694A624F2057ACCD006FAA30 /* Omise_ChallengeUITests.swift */,
+				694A62512057ACCD006FAA30 /* Info.plist */,
+			);
+			path = "Omise-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		694A625E2057ADBF006FAA30 /* Modal */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modal;
+			sourceTree = "<group>";
+		};
+		694A625F2057ADCD006FAA30 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				694A62642057AFFD006FAA30 /* CharityCellView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		694A62602057ADD9006FAA30 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				694A62622057AE2E006FAA30 /* CharityListController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		694A62612057ADE1006FAA30 /* Api Manager */ = {
+			isa = PBXGroup;
+			children = (
+				694A62662057B0C9006FAA30 /* ApiDataSource.swift */,
+			);
+			path = "Api Manager";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		694A62282057ACCC006FAA30 /* Omise-Challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 694A62542057ACCD006FAA30 /* Build configuration list for PBXNativeTarget "Omise-Challenge" */;
+			buildPhases = (
+				694A62252057ACCC006FAA30 /* Sources */,
+				694A62262057ACCC006FAA30 /* Frameworks */,
+				694A62272057ACCC006FAA30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Omise-Challenge";
+			productName = "Omise-Challenge";
+			productReference = 694A62292057ACCC006FAA30 /* Omise-Challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+		694A623F2057ACCD006FAA30 /* Omise-ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 694A62572057ACCD006FAA30 /* Build configuration list for PBXNativeTarget "Omise-ChallengeTests" */;
+			buildPhases = (
+				694A623C2057ACCD006FAA30 /* Sources */,
+				694A623D2057ACCD006FAA30 /* Frameworks */,
+				694A623E2057ACCD006FAA30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				694A62422057ACCD006FAA30 /* PBXTargetDependency */,
+			);
+			name = "Omise-ChallengeTests";
+			productName = "Omise-ChallengeTests";
+			productReference = 694A62402057ACCD006FAA30 /* Omise-ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		694A624A2057ACCD006FAA30 /* Omise-ChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 694A625A2057ACCD006FAA30 /* Build configuration list for PBXNativeTarget "Omise-ChallengeUITests" */;
+			buildPhases = (
+				694A62472057ACCD006FAA30 /* Sources */,
+				694A62482057ACCD006FAA30 /* Frameworks */,
+				694A62492057ACCD006FAA30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				694A624D2057ACCD006FAA30 /* PBXTargetDependency */,
+			);
+			name = "Omise-ChallengeUITests";
+			productName = "Omise-ChallengeUITests";
+			productReference = 694A624B2057ACCD006FAA30 /* Omise-ChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		694A62212057ACCC006FAA30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Omise;
+				TargetAttributes = {
+					694A62282057ACCC006FAA30 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					694A623F2057ACCD006FAA30 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 694A62282057ACCC006FAA30;
+					};
+					694A624A2057ACCD006FAA30 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 694A62282057ACCC006FAA30;
+					};
+				};
+			};
+			buildConfigurationList = 694A62242057ACCC006FAA30 /* Build configuration list for PBXProject "Omise-Challenge" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 694A62202057ACCC006FAA30;
+			productRefGroup = 694A622A2057ACCC006FAA30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				694A62282057ACCC006FAA30 /* Omise-Challenge */,
+				694A623F2057ACCD006FAA30 /* Omise-ChallengeTests */,
+				694A624A2057ACCD006FAA30 /* Omise-ChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		694A62272057ACCC006FAA30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694A623A2057ACCD006FAA30 /* LaunchScreen.storyboard in Resources */,
+				694A62372057ACCC006FAA30 /* Assets.xcassets in Resources */,
+				694A62322057ACCC006FAA30 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694A623E2057ACCD006FAA30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694A62492057ACCD006FAA30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		694A62252057ACCC006FAA30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694A622D2057ACCC006FAA30 /* AppDelegate.swift in Sources */,
+				694A62632057AE2E006FAA30 /* CharityListController.swift in Sources */,
+				694A62672057B0C9006FAA30 /* ApiDataSource.swift in Sources */,
+				694A62352057ACCC006FAA30 /* Omise_Challenge.xcdatamodeld in Sources */,
+				694A62652057AFFD006FAA30 /* CharityCellView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694A623C2057ACCD006FAA30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694A62452057ACCD006FAA30 /* Omise_ChallengeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		694A62472057ACCD006FAA30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				694A62502057ACCD006FAA30 /* Omise_ChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		694A62422057ACCD006FAA30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 694A62282057ACCC006FAA30 /* Omise-Challenge */;
+			targetProxy = 694A62412057ACCD006FAA30 /* PBXContainerItemProxy */;
+		};
+		694A624D2057ACCD006FAA30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 694A62282057ACCC006FAA30 /* Omise-Challenge */;
+			targetProxy = 694A624C2057ACCD006FAA30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		694A62302057ACCC006FAA30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				694A62312057ACCC006FAA30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		694A62382057ACCD006FAA30 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				694A62392057ACCD006FAA30 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		694A62522057ACCD006FAA30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		694A62532057ACCD006FAA30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		694A62552057ACCD006FAA30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Omise-Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omise.challenge.Omise-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		694A62562057ACCD006FAA30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Omise-Challenge/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omise.challenge.Omise-Challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		694A62582057ACCD006FAA30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Omise-ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omise.challenge.Omise-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Omise-Challenge.app/Omise-Challenge";
+			};
+			name = Debug;
+		};
+		694A62592057ACCD006FAA30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Omise-ChallengeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omise.challenge.Omise-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Omise-Challenge.app/Omise-Challenge";
+			};
+			name = Release;
+		};
+		694A625B2057ACCD006FAA30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Omise-ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omise.challenge.Omise-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Omise-Challenge";
+			};
+			name = Debug;
+		};
+		694A625C2057ACCD006FAA30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Omise-ChallengeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.omise.challenge.Omise-ChallengeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Omise-Challenge";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		694A62242057ACCC006FAA30 /* Build configuration list for PBXProject "Omise-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694A62522057ACCD006FAA30 /* Debug */,
+				694A62532057ACCD006FAA30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		694A62542057ACCD006FAA30 /* Build configuration list for PBXNativeTarget "Omise-Challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694A62552057ACCD006FAA30 /* Debug */,
+				694A62562057ACCD006FAA30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		694A62572057ACCD006FAA30 /* Build configuration list for PBXNativeTarget "Omise-ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694A62582057ACCD006FAA30 /* Debug */,
+				694A62592057ACCD006FAA30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		694A625A2057ACCD006FAA30 /* Build configuration list for PBXNativeTarget "Omise-ChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				694A625B2057ACCD006FAA30 /* Debug */,
+				694A625C2057ACCD006FAA30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		694A62332057ACCC006FAA30 /* Omise_Challenge.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				694A62342057ACCC006FAA30 /* Omise_Challenge.xcdatamodel */,
+			);
+			currentVersion = 694A62342057ACCC006FAA30 /* Omise_Challenge.xcdatamodel */;
+			path = Omise_Challenge.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 694A62212057ACCC006FAA30 /* Project object */;
+}
