@@ -10,64 +10,94 @@ import UIKit
 
 class CharityListController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    var charityList:Array<Any>!
+    var charityList:Array<Any> = []
+    var charityName:String = ""
 
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-
-        if charityList.count as! Int != nil {
-            return charityList.count ;
-
-        } else {
-            return 0;
-            
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "charityCell", for: indexPath) as! CharityCellView
-        if let charityData = charityList?[indexPath.row] as? NSDictionary {
-            
-            cell.charityName.text = charityData["name"] as? String
-//            if ((charityData.value(forKey: "image") as? String) != nil){
-//
-//            }
-        print(charityData)
-        }
-        return cell
-    }
-    
+  
 
     @IBOutlet weak var charityTable: UITableView!
   
     override func viewDidLoad() {
         super.viewDidLoad()
         
- ApiDataSource.sharedInstance.getCharityList(completion: {
-    result in
-    print(result);
+        //Seperator line remove
+        self.charityTable.separatorStyle = UITableViewCellSeparatorStyle.none
+
+    }
     
-    self.charityList = result ;
-    self.charityTable.reloadData()
- })
-        // Do any additional setup after loading the view.
+    override func viewWillAppear(_ animated: Bool) {
+        //Activity Trigger
+        let actInd: UIActivityIndicatorView = UIActivityIndicatorView()
+        actInd.center = self.view.center
+        actInd.hidesWhenStopped = true
+        actInd.activityIndicatorViewStyle =
+            UIActivityIndicatorViewStyle.gray
+        self.view.addSubview(actInd)
+        actInd.startAnimating()
+        
+        //API Call
+ApiDataSource.sharedInstance.getCharityList(completion: {
+            result in
+            self.charityList = result ;
+            DispatchQueue.main.async {
+                self.charityTable.reloadData()
+                actInd.stopAnimating()
+                actInd.removeFromSuperview()
+
+            };
+        })
     }
 
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    //MARK: TABLE VIEW DATASOURCE
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+            return charityList.count ;
+        
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "charityCell", for: indexPath) as! CharityCellView
+        if let charityData = charityList[indexPath.row] as? NSDictionary {
+            
+            //Charity name
+            cell.charityName.text = charityData["name"] as? String
+            if ((charityData.value(forKey: "logo_url") as? String) != nil){
+                
+                //set placeholder image first.
+                cell.charityImage.image = UIImage(named: "launchImg")
+                cell.charityImage.downloadImageFrom(link: (charityData.value(forKey: "logo_url") as? String)!, contentMode: .scaleAspectFit)
+            }
+        }
+        return cell
+    }
+    
+    //MARK: TABLE VIEW DELEGATE
+
+    func tableView(_ tableView: UITableView, didSelectRowAt
+        indexPath: IndexPath){
+        if let charityData = charityList[indexPath.row] as? NSDictionary {
+            
+            charityName =  (charityData["name"] as? String)!
+            
+            performSegue(withIdentifier: "showDonation", sender: self)
+
+        }
+    }
+    
+    //MARK: SEQUE DELEGATE
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        if segue.destination is DonationViewController
+        {
+            let vc = segue.destination as? DonationViewController
+            vc?.charityName = charityName
+        }
+    }
+
 
 }

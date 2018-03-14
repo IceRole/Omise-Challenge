@@ -9,29 +9,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Omise-Challenge/Api Manager/ApiDataSource.swift"
-            timestampString = "542639801.36624"
+            filePath = "Omise-Challenge/View/GIF+UIImage.swift"
+            timestampString = "542708657.404929"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "getCharityList(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Omise-Challenge/Controller/CharityListController.swift"
-            timestampString = "542639801.36842"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "downloadImageFrom(link:contentMode:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
